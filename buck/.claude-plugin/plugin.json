@@ -6,6 +6,5 @@
     "name": "chinhstringee"
   },
   "license": "MIT",
-  "keywords": ["bitbucket", "multi-repo", "pull-request", "branch", "devops"],
-  "category": "devops"
+  "keywords": ["bitbucket", "multi-repo", "pull-request", "branch", "devops"]
 }
