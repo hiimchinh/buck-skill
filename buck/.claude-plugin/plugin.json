@@ -1,0 +1,11 @@
+{
+  "name": "buck",
+  "description": "Multi-repo orchestration for Bitbucket Cloud. Create branches, PRs, merge/decline/approve PRs, status dashboard, branch cleanup across repos.",
+  "version": "1.0.0",
+  "author": {
+    "name": "chinhstringee"
+  },
+  "license": "MIT",
+  "keywords": ["bitbucket", "multi-repo", "pull-request", "branch", "devops"],
+  "category": "devops"
+}
