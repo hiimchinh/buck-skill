@@ -1,7 +1,7 @@
 {
   "name": "buck",
   "description": "Multi-repo orchestration for Bitbucket Cloud. Create branches, PRs, merge/decline/approve PRs, status dashboard, branch cleanup across repos.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "chinhstringee"
   },
