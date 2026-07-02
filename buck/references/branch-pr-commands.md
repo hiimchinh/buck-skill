@@ -31,7 +31,7 @@ buck create feature/login -i
 |------|-------|-------------|
 | `--repos` | `-r` | Comma-separated repo slugs |
 | `--group` | `-g` | Repo group from config |
-| `--from` | | Source branch (default: config `defaults.source_branch`) |
+| `--from` | `-f` | Source branch (default: config `defaults.source_branch`) |
 | `--interactive` | `-i` | Force interactive selection |
 | `--dry-run` | | Preview only |
 
@@ -49,14 +49,18 @@ buck pr feature/login --repos repo-api,repo-web
 # Custom destination branch
 buck pr feature/login --group backend --destination develop
 
-# Custom title
+# Custom title (buck >= 0.9.0; default title is derived from branch name)
 buck pr feature/login --repos repo-api --title "Add login feature"
-
-# With reviewers
-buck pr feature/login --repos repo-api --reviewers "{uuid1},{uuid2}"
 
 # Preview
 buck pr feature/login --group backend --dry-run
+```
+
+To add reviewers, create the PR first then use the `buck pr reviewers`
+subcommand (see `pr-management-commands.md`):
+
+```bash
+buck pr reviewers feature/login --add "{uuid1},{uuid2}" --repos repo-api
 ```
 
 ### Flags
@@ -65,12 +69,10 @@ buck pr feature/login --group backend --dry-run
 |------|-------|-------------|
 | `--repos` | `-r` | Comma-separated repo slugs |
 | `--group` | `-g` | Repo group from config |
-| `--destination` | `-d` | Target branch (default: config `defaults.source_branch`) |
-| `--title` | `-t` | PR title (default: branch name) |
-| `--reviewers` | | Comma-separated reviewer UUIDs |
+| `--destination` | `-d` | Target branch (default: master) |
+| `--title` | `-t` | PR title (default: derived from branch name; buck >= 0.9.0) |
 | `--interactive` | `-i` | Force interactive selection |
 | `--dry-run` | | Preview only |
-| `--close-source-branch` | | Delete source branch after merge |
 
 ### Auto-detect Mode
 
