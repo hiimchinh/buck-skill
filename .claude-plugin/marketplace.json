@@ -1,7 +1,7 @@
 {
   "name": "buck-marketplace",
   "owner": {
-    "name": "chinhstringee"
+    "name": "hiimchinh"
   },
   "metadata": {
     "description": "Buck - Multi-repo orchestration for Bitbucket Cloud",
@@ -15,7 +15,7 @@
       "description": "Multi-repo orchestration for Bitbucket Cloud. Create branches, PRs, merge/decline/approve PRs, status dashboard, branch cleanup across repos.",
       "version": "1.0.2",
       "author": {
-        "name": "chinhstringee"
+        "name": "hiimchinh"
       },
       "license": "MIT",
       "keywords": ["bitbucket", "multi-repo", "pull-request", "branch", "devops"]
