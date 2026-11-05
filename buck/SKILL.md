@@ -91,8 +91,8 @@ If output is `NEEDS_MIGRATION`, run the migration steps below before any buck co
 ## Install
 
 ```bash
-brew install chinhstringee/tap/buck
-# Or: go install github.com/chinhstringee/buck@latest
+brew install hiimchinh/tap/buck
+# Or: go install github.com/hiimchinh/buck@latest
 ```
 
 ## Setup
